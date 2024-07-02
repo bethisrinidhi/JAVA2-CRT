@@ -1,0 +1,16 @@
+concat()-STRINGS(Hackerrank):
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        String str1=s.next();
+        String str2=s.next();
+        str1=str1.concat(" ");
+        str1=str1.concat(str2);
+        System.out.println(str1);
+    }
+}
