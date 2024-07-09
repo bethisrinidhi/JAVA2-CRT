@@ -1,0 +1,27 @@
+AUTOMATIC PROMOTION IN OVERLOADING:
+
+import java.util.*;
+class Test{
+    void show(int a,int b){
+        System.out.println("2 args int method");
+    }
+    void show(int a,int b,int c){
+        System.out.println("3 args int method");
+    }
+    void show (double a,double b){
+         System.out.println("2 args double method");
+    }
+    public static void main(String[] args) {
+      Test t1=new Test();
+      t1.show(11,23,13);
+      t1.show(34.5,12.9);
+      t1.show(56,78);
+      t1.show('A','B','U');//char is converted into integer datatype
+    }
+}
+
+OUTPUT:
+3 args int method
+2 args double method
+2 args int method
+3 args int method
