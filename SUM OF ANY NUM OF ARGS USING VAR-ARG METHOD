@@ -1,0 +1,28 @@
+SUM OF ANY NUM OF ARGS USING VAR-ARG METHOD:
+
+import java.util.*;
+class Test{
+    void add(int... a){
+        int s=0;
+        for(int x:a){
+            s=s+x;
+        }
+        System.out.println(s);
+    }
+    
+    public static void main(String[] args) {
+      Test t1=new Test();
+      t1.add(11,23,13,45,67,89,23);
+      t1.add(34,5,12,9,23);
+      t1.add(5,10);
+      t1.add();
+     
+    }
+}
+
+
+OUTPUT:
+271
+83
+15
+0
