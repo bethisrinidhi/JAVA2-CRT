@@ -1,0 +1,23 @@
+VAR-ARG METHOD (Method Overloading):
+
+import java.util.*;
+class Test{
+    static void show(int... a){
+        System.out.println("var-arg method"+Arrays.toString(a));
+    }
+    
+    public static void main(String[] args) {
+      Test t1=new Test();
+      t1.show(11,23,13,45,67,89,23);
+      t1.show(34,5,12,9,23);
+      t1.show(5,10);
+      t1.show();
+     
+    }
+}
+
+OUTPUT:
+var-arg method[11, 23, 13, 45, 67, 89, 23]
+var-arg method[34, 5, 12, 9, 23]
+var-arg method[5, 10]
+var-arg method[]
