@@ -1,0 +1,32 @@
+SUM OF DIGITS OF AN ELEMENT IN AN ARRAY:
+
+import java.util.*;
+
+public class testing 
+{
+    public static void main(String [] arg) 
+    {   
+   Scanner sc=new Scanner(System.in);
+   int n=sc.nextInt();
+   int a[]=new int[n];
+   for(int i=0;i<n;i++){
+       a[i]=sc.nextInt();
+             }
+    for(int i=0;i<n;i++){
+        int sum=0;
+        while(a[i]>0){
+            int rem=a[i]%10;
+            a[i]=a[i]/10;
+            sum=sum+rem;
+            
+        }
+      System.out.print(sum+" ");        
+    }
+
+}
+}
+
+OUTPUT:
+5
+333 445 123 567 12
+9 13 6 18 3 
